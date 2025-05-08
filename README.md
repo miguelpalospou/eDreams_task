@@ -42,8 +42,8 @@ The DAG:
 ## Assumptions & Decisions
 - I noticed some values were not correct in the input csv file. My decision was to include a regex mapping function in the transformation stage to eliminate non-numeric characters from the price fields.
 However, some values in the date column were corrected manually, since there wasn't a clear pattern, and future input data could have different incorrect data.
--> NOTE: I highly recommend to add a data consistancy check when the data is generated form the very beginning (CRMs, eDreams website, etc) to avoid these problems.
--> NOTE 2: In the future I would add some testing checks at the raw data extraction. These are crucial to detect potential problems upstream. We could use "Great Expectations" here.
+- NOTE: I highly recommend to add a data consistancy check when the data is generated form the very beginning (CRMs, eDreams website, etc) to avoid these problems.
+- NOTE 2: In the future I would add some testing checks at the raw data extraction. These are crucial to detect potential problems upstream. We could use "Great Expectations" here.
   
 - I saw that the provider_bookings.csv file had an extra space at the beginnign of the file name. This is something that should be avoided, since it was causing extraction issues.
 - All IDs are stored as `TEXT` for compatibility and simplicity.
