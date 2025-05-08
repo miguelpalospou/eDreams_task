@@ -93,3 +93,7 @@ However, some values in the date column were corrected manually, since there was
 
 - If you do not see the DAG in the UI, ensure the `dags/etl_provider_bookings.py` file is present and Airflow is running.
 - If containers are not running, use `docker-compose up -d` to start them.
+
+## Proposed architecture
+
+![image](https://github.com/user-attachments/assets/c24bcd7e-47c7-48f5-9eaa-11adcb436032)
