@@ -53,6 +53,30 @@ However, some values in the date column were corrected manually, since there was
   - Removing non-numeric characters from price fields.
   - Converting timestamps to the correct format.
   - Handling missing or malformed data by setting fields to `NULL` where appropriate.
+ 
+# Deliveries
+
+## 1. Export of the Final Table
+- **Path:** `data/provider_booking_final.csv`
+- **Description:** Contains the final, cleaned, deduplicated table as required.
+
+## 2. ETL Process Code
+- **Path:** `docker-airflow/dags/etl_provider_bookings.py`
+- **Description:** Airflow DAG with all SQL and orchestration logic.
+
+## 3. Orchestrator Code
+- **Path:** `docker-airflow/dags/etl_provider_bookings.py`
+- **Description:** This file is used by Airflow to run the ETL pipeline. Trigger the DAG from the Airflow UI.
+
+## 4. Docker Compose Files
+- **Path:** `docker-airflow/docker-compose.yaml`
+- **Description:** Used to start all required services (Airflow, Postgres, Redis, etc.).
+- **How to run:**
+  ```sh
+  cd docker-airflow
+  docker-compose up -d
+  ```
+
 
 ## Rerunning the Pipeline
 
