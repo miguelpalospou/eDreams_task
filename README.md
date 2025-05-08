@@ -11,6 +11,9 @@ The DAG:
 4. Creates a cleaned production table (`provider_booking`) if it doesn't exist
 5. Inserts new, non-duplicate records into the production table
 
+![image](https://github.com/user-attachments/assets/dba4038b-c290-4403-a444-bbac8255df8e)
+
+
 ## How to Run
 
 1. **Start the Docker Network (if not already running):**
