@@ -79,6 +79,9 @@ However, some values in the date column were corrected manually, since there was
   cd docker-airflow
   docker-compose up -d
   ```
+## 3. QUERIES for Analysis 
+- **Path:** `eDreams_task/analysis_queries.sql
+- **Description:** This file contains the queries for task 2
 
 
 ## Rerunning the Pipeline
